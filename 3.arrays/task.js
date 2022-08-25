@@ -17,8 +17,15 @@ function compareArrays(arr1, arr2) {
 
 function advancedFilter(arr) {
     let resultArr;
+    resultArr = arr.filter(function(el) {
+        return el % 3 === 0
+    }).filter(function(el) {
+        return el > 0;
+    }).map(function(el) {
+        return el * 10;
+    })
 
-    // Ваш код
+    // let result = arr.filter(...).filter(...).map(...)
 
     return resultArr; // array
 }
